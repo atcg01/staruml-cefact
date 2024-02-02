@@ -1,0 +1,29 @@
+{
+    "name": "gs-gs.staruml-cefact",
+    "title": "OpenAPI3.0 Generator",
+    "description": "StarUML Extension for generating OpenAPI 3.0 Specs from the UML Diagrams. \nImplementation Rules are according to https://edi3.org/uml-profile/ \nExtension Source Code: https://github.com/gs-gs/staruml-cefact \nExtension version: 0.7.1-rc5",
+    "version": "0.8.0-rc1",
+    "engines": {
+        "staruml": ">=3.0.0"
+    },
+    "scripts": {
+        "test": "mocha",
+        "app": "node -p \"require('./main.js').runStarUML()\""
+    },
+    "author": {
+        "name": "GoSource Pty Ltd",
+        "email": "info@gosource.com.au",
+        "url": "https://gosource.com.au"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "async-foreach": "^0.1.3",
+        "fs-extra": "^11.2.0",
+        "got": "^11.8.6",
+        "mocha": "^10.2.0",
+        "swagger-parser": "^10.0.3"
+    },
+    "devDependencies": {
+        "eslint": "^8.56.0"
+    }
+}

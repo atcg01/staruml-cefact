@@ -1,0 +1,87 @@
+{
+  "menu": [
+    {
+      "id": "tools",
+      "submenu": [
+        {
+          "label": "OpenAPI",
+          "id": "tool.openapi",
+          "submenu": [
+            {
+              "label": "Generate Specs",
+              "id": "tools.openapi.generate",
+              "command": "openapi:generate-specs"
+            },
+            {
+              "label": "Test 'Package' or 'Diagram'",
+              "id": "tools.openapi.testextension",
+              "command": "openapi:test-single-package"
+            },
+            {
+              "label": "Test Nico",
+              "id": "tools.atcg01.test",
+              "command": "atcg01:test"
+            },
+            {
+              "label": "Test Entire Project",
+              "id": "tools.openapi.testallextension",
+              "command": "openapi:test-entire-package"
+            },
+            {
+              "label": "Extension version : 0.7.1-rc4",
+              "id": "tools.openapi.version",
+              "command": "generate:show-version-dialog"
+            },
+            {
+              "label": "About Extension",
+              "id": "tools.openapi.aboutext",
+              "command": "openapi:about-us"
+            }
+          ]
+        },
+        {
+          "label": "JSON-LD (v0.7.1-rc5)",
+          "id": "tool.jsonld",
+          "submenu": [
+            {
+              "label": "Import locally stored Vocabulary",
+              "id": "tools.jsold.import-vocabulary",
+              "command": "jsonld:import-vocabulary"
+            },
+            {
+              "label": "Import locally stored Context",
+              "id": "tools.jsold.import-context",
+              "command": "jsonld:import-context"
+            },
+            {
+              "label": "Import remotely stored Vocabulary",
+              "id": "tools.jsold.import-vocabulary-url",
+              "command": "jsonld:import-vocabulary-url"
+            },
+            {
+              "label": "Import remotely stored Context",
+              "id": "tools.jsold.import-context-url",
+              "command": "jsonld:import-context-url"
+            },
+            {
+              "label": "UN/CEFACT",
+              "id": "tools.jsold.uncefact",
+              "submenu": [
+                {
+                  "label": "1. Import UN/CEFACT Vocabulary",
+                  "id": "tools.jsold.import-uncefact-vocabulary",
+                  "command": "jsonld:import-uncefact-vocabulary"
+                },
+                {
+                  "label": "2. Init UN/EDIFACT Consolidated Code Lists",
+                  "id": "tools.jsold.import-uncl",
+                  "command": "jsonld:import-uncl"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
